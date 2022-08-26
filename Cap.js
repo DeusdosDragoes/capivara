@@ -26,9 +26,9 @@ function enumerarH2(elemento, num) {
     elemento.textContent = `${num}. ${elemento.textContent}`
     elemento.id = `h2${num}`
     const inicio = fazerLink('#', 'inicio')
-    botaoRetorno(elemento, inicio)
+    Retorno(elemento, inicio)
 }
-function botaoRetorno(elemento, ref) {
+function Retorno(elemento, ref) {
     const nextElement = elemento.nextElementSibling
     elemento.parentElement.insertBefore(ref, nextElement)
 }
